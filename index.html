@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chúc mừng 20/10 - Ngày Phụ nữ Việt Nam</title>
+	<link rel="shortcut icon" href="img/icon.ico" type="image/x-icon"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
+	<link rel="stylesheet" href="1.css">
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@700;900&display=swap');
+		
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+		body {
+			background: linear-gradient(180deg, #ffb3ba 0%, #ffccd5 30%, #ffe4e9 60%, #ffeef2 100%) !important;
+			position: relative;
+			padding-top: 100px;
+		}
+		
+		.main-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			padding: 20px;
+			max-width: 100%;
+		}
+		
+		/* Logo containers */
+		.logo-container {
+			position: fixed;
+			top: 20px;
+			display: flex;
+			gap: 15px;
+			z-index: 100;
+			animation: slideInDown 1s ease-out;
+		}
+		
+		.logo-left {
+			left: 20px;
+		}
+		
+		.logo-right {
+			right: 20px;
+		}
+		
+		.club-logo {
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			object-fit: cover;
+			border: 3px solid white;
+			box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+			transition: all 0.3s ease;
+			animation: float 3s ease-in-out infinite;
+		}
+		
+		.club-logo:hover {
+			transform: scale(1.15) rotate(5deg);
+			box-shadow: 0 8px 30px rgba(255, 105, 180, 0.5);
+			border-color: #ff69b4;
+		}
+		
+		@keyframes slideInDown {
+			from {
+				opacity: 0;
+				transform: translateY(-100px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+		
+		.flower-icon {
+			font-size: 60pt;
+			position: fixed;
+			top: 3px;
+			right: 3px;
+			animation: rotate 3s ease-in-out infinite, glow 2s ease-in-out infinite;
+			filter: drop-shadow(0 5px 10px rgba(255, 105, 180, 0.3));
+			z-index: 100;
+		}
+		
+		/* Thông tin tổ chức */
+		.organizer-info {
+			text-align: center;
+			margin-bottom: 25px;
+			padding: 15px 20px;
+			background: rgba(255, 255, 255, 0.4);
+			border-radius: 20px;
+			backdrop-filter: blur(10px);
+			box-shadow: 0 5px 20px rgba(255, 105, 180, 0.2);
+			animation: fadeIn 1s ease-in-out;
+			border: 2px solid rgba(255, 255, 255, 0.6);
+		}
+		
+		.org-text {
+			font-size: 16pt;
+			font-weight: 600;
+			color: #c2185b;
+			margin: 5px 0;
+			font-family: 'Roboto Condensed', sans-serif;
+			text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+		}
+		
+		.org-subtitle {
+			font-size: 14pt;
+			color: #e91e63;
+			margin: 5px 0;
+			font-family: 'Great Vibes', cursive;
+			font-style: italic;
+		}
+		
+		@keyframes rotate {
+			0%, 100% { transform: rotate(-5deg) scale(1); }
+			50% { transform: rotate(5deg) scale(1.1); }
+		}
+		
+		@keyframes glow {
+			0%, 100% { filter: drop-shadow(0 5px 10px rgba(255, 105, 180, 0.3)); }
+			50% { filter: drop-shadow(0 5px 20px rgba(255, 105, 180, 0.6)); }
+		}
+		
+		.chao-mung {
+			font-size: 38pt;
+			font-family: 'Great Vibes', cursive;
+			color: #e91e63;
+			margin: 5px 0;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+			animation: fadeIn 1.5s ease-in-out, wave 3s ease-in-out infinite;
+		}
+		
+		@keyframes wave {
+			0%, 100% { transform: translateY(0px); }
+			50% { transform: translateY(-8px); }
+		}
+		
+		.date-2010 {
+			font-size: 72pt;
+			font-weight: 900;
+			font-family: 'Playfair Display', serif;
+			color: #ff1744;
+			margin: 5px 0;
+			letter-spacing: 5px;
+			text-shadow: 3px 3px 6px rgba(0,0,0,0.15);
+			animation: fadeIn 2s ease-in-out, colorChange 4s ease-in-out infinite;
+		}
+		
+		@keyframes colorChange {
+			0%, 100% { color: #ff1744; text-shadow: 3px 3px 6px rgba(255,23,68,0.3); }
+			50% { color: #ff69b4; text-shadow: 3px 3px 10px rgba(255,105,180,0.5); }
+		}
+		
+		.ngay-phu-nu {
+			font-size: 40pt;
+			font-family: 'Great Vibes', cursive;
+			color: #5c9e92;
+			margin: 5px 0;
+			font-style: italic;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+			animation: fadeIn 2.3s ease-in-out, swing 3s ease-in-out infinite;
+		}
+		
+		@keyframes swing {
+			0%, 100% { transform: rotate(-1.5deg); }
+			50% { transform: rotate(1.5deg); }
+		}
+		
+		.viet-nam {
+			font-size: 44pt;
+			font-weight: 900;
+			font-family: 'Playfair Display', serif;
+			color: #d32f2f;
+			margin: 5px 0 20px 0;
+			text-shadow: 3px 3px 6px rgba(0,0,0,0.15);
+			animation: fadeIn 2.6s ease-in-out, bounce 2s ease-in-out infinite;
+		}
+		
+		@keyframes bounce {
+			0%, 100% { transform: translateY(0px); }
+			50% { transform: translateY(-6px); }
+		}
+		
+		.heart-container {
+			margin: 20px 0 15px 0;
+			cursor: pointer;
+			animation: pulse 2s ease-in-out infinite, heartbeat 1.5s ease-in-out infinite;
+			max-width: 350px;
+			width: 100%;
+			filter: drop-shadow(0 5px 15px rgba(234, 67, 53, 0.3));
+			transition: all 0.3s ease;
+		}
+		
+		.heart-container:hover {
+			transform: scale(1.2) rotate(5deg);
+			filter: drop-shadow(0 10px 30px rgba(234, 67, 53, 0.6));
+			animation: shake 0.5s ease-in-out infinite;
+		}
+		
+		@keyframes heartbeat {
+			0%, 100% { transform: scale(1); }
+			10% { transform: scale(1.05); }
+			20% { transform: scale(1); }
+			30% { transform: scale(1.05); }
+			40%, 100% { transform: scale(1); }
+		}
+		
+		@keyframes shake {
+			0%, 100% { transform: scale(1.2) rotate(5deg); }
+			25% { transform: scale(1.2) rotate(7deg); }
+			75% { transform: scale(1.2) rotate(3deg); }
+		}
+		
+		.click-text {
+			z-index: 100;
+			text-align: center;
+			font-size: 22pt;
+			color: #ff6b9d;
+			font-family: 'Great Vibes', cursive;
+			margin: 10px 0;
+			animation: blink 2s ease-in-out infinite, sparkle 3s ease-in-out infinite;
+			text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+		}
+		
+		@keyframes blink {
+			0%, 100% { opacity: 1; }
+			50% { opacity: 0.7; }
+		}
+		
+		@keyframes sparkle {
+			0%, 100% { 
+				text-shadow: 1px 1px 3px rgba(0,0,0,0.1), 0 0 10px rgba(255,105,180,0.3); 
+				transform: scale(1);
+			}
+			50% { 
+				text-shadow: 1px 1px 5px rgba(0,0,0,0.2), 0 0 20px rgba(255,105,180,0.6), 0 0 30px rgba(255,105,180,0.4); 
+				transform: scale(1.05);
+			}
+		}
+		
+		/* Ảnh fixed ở dưới màn hình */
+		.image-2010-container {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			pointer-events: none;
+			z-index: 0;
+		}
+		
+		.image-2010 {
+			max-width: 450px;
+			width: 40%;
+			height: auto;
+			animation: fadeInUp 2s ease-in-out, sway 4s ease-in-out infinite;
+			filter: drop-shadow(0 -10px 30px rgba(0,0,0,0.2));
+		}
+		
+		@keyframes sway {
+			0%, 100% { transform: translateX(0px) rotate(0deg); }
+			25% { transform: translateX(-10px) rotate(-1deg); }
+			75% { transform: translateX(10px) rotate(1deg); }
+		}
+		
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+				transform: translateY(-30px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+		
+		@keyframes fadeInUp {
+			from {
+				opacity: 0;
+				transform: translateY(100px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+		
+		@keyframes pulse {
+			0%, 100% {
+				transform: scale(1);
+			}
+			50% {
+				transform: scale(1.05);
+			}
+		}
+		
+		/* Responsive cho màn hình lớn */
+		@media (min-width: 1920px) {
+			.flower-icon { font-size: 80pt; }
+			.chao-mung { font-size: 50pt; }
+			.date-2010 { font-size: 90pt; }
+			.ngay-phu-nu { font-size: 52pt; }
+			.viet-nam { font-size: 56pt; }
+			.heart-container { max-width: 450px; }
+			.click-text { font-size: 28pt; }
+			.image-2010 { max-width: 550px; width: 35%; }
+			.club-logo { width: 90px; height: 90px; }
+			.org-text { font-size: 20pt; }
+			.org-subtitle { font-size: 18pt; }
+		}
+		
+		/* Responsive cho tablet */
+		@media (max-width: 1024px) {
+			.flower-icon { font-size: 55pt; }
+			.chao-mung { font-size: 34pt; }
+			.date-2010 { font-size: 64pt; }
+			.ngay-phu-nu { font-size: 36pt; }
+			.viet-nam { font-size: 40pt; }
+			.heart-container { max-width: 320px; }
+			.click-text { font-size: 20pt; }
+			.image-2010 { width: 45%; max-width: 400px; }
+			.club-logo { width: 70px; height: 70px; }
+			.org-text { font-size: 15pt; }
+			.org-subtitle { font-size: 13pt; }
+		}
+		
+		/* Responsive cho mobile */
+		@media (max-width: 768px) {
+			.main-container { padding: 15px; }
+			.flower-icon { font-size: 45pt; }
+			.chao-mung { font-size: 26pt; }
+			.date-2010 { font-size: 52pt; letter-spacing: 3px; }
+			.ngay-phu-nu { font-size: 28pt; }
+			.viet-nam { font-size: 32pt; }
+			.heart-container { max-width: 280px; }
+			.click-text { font-size: 17pt; }
+			.image-2010 { width: 60%; max-width: 320px; }
+			.club-logo { width: 60px; height: 60px; }
+			.logo-container { top: 15px; gap: 10px; }
+			.logo-left { left: 15px; }
+			.logo-right { right: 15px; }
+			.org-text { font-size: 13pt; }
+			.org-subtitle { font-size: 11pt; }
+			.organizer-info { padding: 12px 15px; margin-bottom: 20px; }
+		}
+		
+		/* Responsive cho mobile nhỏ */
+		@media (max-width: 480px) {
+			.main-container { padding: 10px; }
+			.flower-icon { font-size: 38pt; }
+			.chao-mung { font-size: 21pt; }
+			.date-2010 { font-size: 42pt; letter-spacing: 2px; }
+			.ngay-phu-nu { font-size: 23pt; }
+			.viet-nam { font-size: 27pt; }
+			.heart-container { max-width: 240px; }
+			.click-text { font-size: 15pt; }
+			.image-2010 { width: 70%; max-width: 280px; }
+			.club-logo { width: 50px; height: 50px; border: 2px solid white; }
+			.logo-container { top: 10px; gap: 8px; }
+			.logo-left { left: 10px; }
+			.logo-right { right: 10px; }
+			.org-text { font-size: 11pt; }
+			.org-subtitle { font-size: 10pt; }
+			.organizer-info { padding: 10px 12px; margin-bottom: 15px; }
+		}
+		
+		/* Responsive cho màn hình rất nhỏ */
+		@media (max-width: 360px) {
+			.flower-icon { font-size: 32pt; }
+			.chao-mung { font-size: 18pt; }
+			.date-2010 { font-size: 36pt; }
+			.ngay-phu-nu { font-size: 20pt; }
+			.viet-nam { font-size: 23pt; }
+			.heart-container { max-width: 210px; }
+			.click-text { font-size: 13pt; }
+			.image-2010 { width: 75%; max-width: 250px; }
+			.club-logo { width: 45px; height: 45px; }
+			.org-text { font-size: 10pt; }
+			.org-subtitle { font-size: 9pt; }
+			.organizer-info { padding: 8px 10px; }
+		}
+		
+	</style>
+</head>
+
+<body>
+	<!-- Logo CLB bên trái -->
+		<div class="logo-container logo-left">
+			<img src="img/sfit.jpg" alt="SFIT Logo" class="club-logo" title="SFIT - Câu lạc bộ Tin học">
+			<img src="img/ulc.jpg" alt="ULC Logo" class="club-logo" title="ULC - Câu lạc bộ">
+		</div>
+		<div class="flower-icon">🌸</div>
+	
+	<div class="main-container">
+		<!-- Thông tin tổ chức -->
+		<div class="organizer-info">
+			<p class="org-text">Câu lạc bộ Tin học SFIT & Câu lạc bộ Logistics ULC</p>
+			<p class="org-subtitle">Thay mặt các bạn nam gửi tới các bạn nữ</p>
+		</div>
+		
+		<!-- Các dòng chữ -->
+		<p class="chao-mung">Chào mừng</p>
+		<!-- <p class="date-2010">20/10</p> -->
+		<p class="ngay-phu-nu">Ngày Phụ nữ</p>
+		<p class="viet-nam">Việt Nam</p>
+		
+		<!-- Trái tim với animation - Click để mở modal -->
+		<div class="heart-container" onclick="openLoginModal()">
+			<svg id="Layer_1" class="heart" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1364 277.28">
+				<defs>
+					<style>
+					.cls-a {
+						fill: none;
+						stroke: #ea4335;
+						stroke-miterlimit: 10;
+						stroke-width: 2;
+					}
+
+					.cls-b {
+						fill: none;
+						stroke: #ea4335;
+						stroke-miterlimit: 10;
+						stroke-width: 2;
+					}
+
+					.cls-2 {
+						fill: #ed5956;
+					}
+
+					.cls-3 {
+						fill: #ea4335;
+					}
+					</style>
+				</defs>
+				<path id="tim" class="cls-a" d="M685.11,222.53,588.67,119.89a74,74,0,0,1-20.38-49.81c-.55-59.75,72.35-84.8,118.8-28.4C747-34.6,826.25,34.44,801.72,94.45a63.52,63.52,0,0,1-13,19.73Z" transform="translate(-2.5 -6.47)"/>
+				<polyline class="cls-b" points="1364 216.05 1281 216.05 1271 170.05 1241 274.05 1214 118.05 1183 262.05 1174 216.05 684 216.05 195 216.05 186 263.05 155 119.05 128 275.05 98 171.05 88 216.05 0 216.05"/>
+				<g id="_timmau_" class="timmau" data-name="&lt;timmau&gt;">
+					<path class="cls-2" d="M802.5,93.92a64.12,64.12,0,0,1-13.17,20L686,222v-182c.17.2.34.39.5.59C747.08-36.66,827.33,33.2,802.5,93.92Z" transform="translate(-2.5 -6.47)"/>
+					<path class="cls-3" d="M569.5,93.92a64.12,64.12,0,0,0,13.17,20L686,222v-182c-.17.2-.34.39-.5.59C624.92-36.66,544.67,33.2,569.5,93.92Z" transform="translate(-2.5 -6.47)"/>
+				</g>
+			</svg>
+		</div>
+		
+		<!-- Text click -->
+		<p class="click-text"  onclick="openLoginModal()">✨ Click vào đây để nhận lời chúc ✨</p>
+	</div>
+	
+	<!-- Hình ảnh cô gái áo dài fixed ở dưới màn hình -->
+	<div class="image-2010-container">
+		<img src="img/2010.png" alt="Happy Women's Day" class="image-2010">
+	</div>
+
+	<!-- Modal đăng nhập mã sinh viên -->
+	<div class="modal fade" id="studentModal" tabindex="-1" role="dialog" aria-labelledby="studentModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content" style="background: rgba(255, 255, 255, 0.98); border-radius: 20px; box-shadow: 0 10px 40px rgba(234, 67, 53, 0.3);">
+				<div class="modal-header" style="border-bottom: 2px solid #ea4335; background: linear-gradient(135deg, #ffebee 0%, #ffffff 100%);">
+					<h5 class="modal-title" id="studentModalLabel" style="color: #ea4335; font-family: 'Great Vibes', cursive; font-size: 32pt;">🌸 Chào mừng bạn!</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true" style="font-size: 32pt;">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body" style="padding: 40px;">
+					<div class="text-center mb-3">
+						<img src="img/2010.png" alt="20/10" style="width: 150px; opacity: 0.8;">
+					</div>
+					<div class="form-group">
+						<label for="msvInput" style="font-size: 16pt; color: #6d3842; font-weight: 500;">Nhập mã sinh viên của bạn:</label>
+						<input type="text" class="form-control" id="msvInput" placeholder="Ví dụ: 24231433" style="border: 2px solid #ffb8c0; border-radius: 15px; font-size: 16pt; padding: 15px; text-align: center;">
+						<small id="errorMsg" class="form-text" style="color: #ea4335; display: none; font-size: 12pt; font-weight: bold;">❌ Không tìm thấy mã sinh viên này!</small>
+					</div>
+				</div>
+				<div class="modal-footer" style="border-top: 2px solid #ea4335; justify-content: center; padding: 20px;">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal" style="border-radius: 20px; padding: 10px 30px; font-size: 14pt;">Đóng</button>
+					<button type="button" class="btn btn-danger" onclick="checkStudent()" style="background: #ea4335; border-radius: 20px; padding: 10px 40px; font-size: 14pt; box-shadow: 0 4px 10px rgba(234, 67, 53, 0.3);">Xác nhận ✨</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal hiển thị lời chúc -->
+	<div class="modal fade" id="greetingModal" tabindex="-1" role="dialog" aria-labelledby="greetingModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+			<div class="modal-content" style="background: linear-gradient(135deg, #ffebee 0%, #fff0f3 100%); border-radius: 25px; border: 3px solid #ea4335; box-shadow: 0 15px 50px rgba(234, 67, 53, 0.4);">
+				<div class="modal-header" style="border-bottom: none; padding: 30px 30px 0 30px;">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute; right: 20px; top: 20px; z-index: 10;">
+						<span aria-hidden="true" style="font-size: 36pt; color: #ea4335;">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body text-center" style="padding: 20px 40px 40px 40px;">
+					<!-- Ảnh 20/10 -->
+					<div style="margin-bottom: 30px;">
+						<img src="img/2010.png" alt="Happy 20/10" style="width: 250px; animation: float 3s ease-in-out infinite;">
+					</div>
+					
+					<!-- Tiêu đề lời chúc -->
+					<h2 id="greetingTitle" style="color: #ea4335; font-family: 'Great Vibes', cursive; font-size: 30pt; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.1);"></h2>
+					
+					<!-- Nội dung lời chúc -->
+					<div id="greetingMessage" style="color: #6d3842; font-size: 18pt; line-height: 2; font-family: 'Roboto Condensed', sans-serif; background: rgba(255, 255, 255, 0.6); padding: 30px; border-radius: 15px; margin-bottom: 20px;"></div>
+					
+					<!-- Hoa trang trí -->
+					<div style="margin-top: 20px;">
+						<div style="font-size: 40pt; animation: float 2s ease-in-out infinite;">
+							🌺 🌸 🌼 💐 🌹
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer" style="border-top: 2px solid #ea4335; justify-content: center; padding: 25px; background: rgba(255, 255, 255, 0.5); border-radius: 0 0 25px 25px;">
+					<button type="button" class="btn btn-danger" data-dismiss="modal" style="background: linear-gradient(135deg, #ea4335 0%, #ff6b6b 100%); border: none; border-radius: 25px; padding: 12px 50px; font-size: 16pt; box-shadow: 0 5px 15px rgba(234, 67, 53, 0.4); transition: all 0.3s;">Cảm ơn bạn! ❤️</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<script src="javascript/charming.js"></script>
+<script src="javascript/anime.js"></script>
+<script src="javascript/scrollMonitor.js"></script>
+<script src="javascript/myscript.js"></script>
+<audio id="backgroundMusic" src="music/Song.mp3" preload="auto"></audio>
+<script>
+// Dữ liệu sinh viên
+let studentsData = [];
+
+// Load dữ liệu từ data.json
+fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+        studentsData = data;
+    })
+    .catch(error => {
+        console.error('Lỗi khi tải dữ liệu:', error);
+    });
+
+function playMusic() {
+    const audio = document.getElementById('backgroundMusic');
+    audio.play().catch(function(error) {
+        console.log('Audio play failed:', error);
+    });
+}
+
+function openLoginModal() {
+    // Bật nhạc nền
+    playMusic();
+    
+    // Hiển thị modal
+    $('#studentModal').modal('show');
+    
+    // Reset form
+    document.getElementById('msvInput').value = '';
+    document.getElementById('errorMsg').style.display = 'none';
+}
+
+function checkStudent() {
+    const msv = document.getElementById('msvInput').value.trim();
+    const errorMsg = document.getElementById('errorMsg');
+    
+    // Tìm sinh viên trong dữ liệu
+    const student = studentsData.find(s => s.msv === msv);
+    
+    if (student) {
+        // Ẩn modal nhập mã
+        $('#studentModal').modal('hide');
+        
+        // Hiển thị lời chúc
+        setTimeout(() => {
+            showGreeting(student);
+        }, 500);
+    } else {
+        // Hiển thị thông báo lỗi
+        errorMsg.style.display = 'block';
+    }
+}
+
+function showGreeting(student) {
+    const greetingTitle = document.getElementById('greetingTitle');
+    const greetingMessage = document.getElementById('greetingMessage');
+    
+    // Tạo lời chúc cá nhân hóa
+    greetingTitle.textContent = `Chào ${student.ten}! 🌸`;
+    greetingMessage.innerHTML = `
+        Nhân dịp ngày Phụ nữ Việt Nam 20/10,<br>
+        Chúc bạn luôn tươi trẻ, xinh đẹp và hạnh phúc!<br>
+        <br>
+        Chúc bạn luôn thành công trong học tập và cuộc sống,<br>
+        Luôn vui vẻ, tràn đầy năng lượng!<br>
+        <br>
+        <strong style="color: #ea4335; font-size: 24pt;">Happy Women's Day! 💐</strong><br>
+        <br>
+        <em style="font-size: 14pt;">Lớp: ${student.lop}</em>
+    `;
+    
+    $('#greetingModal').modal('show');
+}
+
+// Cho phép nhấn Enter để submit
+document.addEventListener('DOMContentLoaded', function() {
+    const msvInput = document.getElementById('msvInput');
+    if (msvInput) {
+        msvInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                checkStudent();
+            }
+        });
+    }
+});
+</script>
+</body>
+</html>
